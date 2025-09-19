@@ -57,11 +57,25 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        healthcare: {
+          primary: "hsl(var(--healthcare-primary))",
+          secondary: "hsl(var(--healthcare-secondary))",
+          soft: "hsl(var(--healthcare-soft))",
+          warm: "hsl(var(--healthcare-warm))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      backgroundImage: {
+        'gradient-hero': 'var(--gradient-hero)',
+        'gradient-card': 'var(--gradient-card)',
+      },
+      boxShadow: {
+        'soft': 'var(--shadow-soft)',
+        'card': 'var(--shadow-card)',
       },
       keyframes: {
         "accordion-down": {
