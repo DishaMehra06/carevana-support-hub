@@ -1,5 +1,4 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import "./Therapists.css";
 
 const Therapists = () => {
   const therapists = [
@@ -52,61 +51,50 @@ const Therapists = () => {
   };
 
   return (
-    <div className="container mx-auto px-6 py-12">
-      <div className="text-center mb-12">
-        <h1 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">
+    <div className="therapists-page">
+      <div className="therapists-header">
+        <h1 className="therapists-title">
           Our Expert Therapists
         </h1>
-        <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+        <p className="therapists-subtitle">
           Meet our dedicated team of licensed professionals committed to providing exceptional care and support for children with special needs.
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="therapists-grid">
         {therapists.map((therapist, index) => (
-          <Card key={index} className="shadow-card hover:shadow-lg transition-all duration-300 border-0 bg-gradient-card">
-            <CardHeader>
-              <div className="flex items-center space-x-4 mb-4">
-                <div className="w-16 h-16 bg-gradient-hero rounded-full flex items-center justify-center">
-                  <span className="text-2xl text-primary-foreground font-bold">
-                    {therapist.name.split(' ').map(n => n[0]).join('')}
-                  </span>
-                </div>
-                <div>
-                  <CardTitle className="text-lg font-semibold text-foreground">
-                    {therapist.name}
-                  </CardTitle>
-                  <p className="text-sm font-medium text-primary">
-                    {therapist.specialization}
-                  </p>
-                </div>
+          <div key={index} className="therapist-card">
+            <div className="therapist-header">
+              <div className="therapist-avatar">
+                {therapist.name.split(' ').map(n => n[0]).join('')}
               </div>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <div>
-                <p className="text-sm text-accent font-medium mb-2">
-                  {therapist.experience}
-                </p>
-                <CardDescription className="text-muted-foreground text-sm leading-relaxed">
-                  {therapist.description}
-                </CardDescription>
-              </div>
-              
-              <div>
-                <p className="text-xs text-muted-foreground font-medium">
-                  {therapist.credentials}
+              <div className="therapist-info">
+                <h3>{therapist.name}</h3>
+                <p className="therapist-specialization">
+                  {therapist.specialization}
                 </p>
               </div>
+            </div>
+            
+            <div className="therapist-details">
+              <p className="therapist-experience">
+                {therapist.experience}
+              </p>
+              <p className="therapist-description">
+                {therapist.description}
+              </p>
+              <p className="therapist-credentials">
+                {therapist.credentials}
+              </p>
+            </div>
 
-              <Button 
-                onClick={() => handleContact(therapist.name)}
-                className="w-full mt-4"
-                variant="outline"
-              >
-                Contact
-              </Button>
-            </CardContent>
-          </Card>
+            <button 
+              onClick={() => handleContact(therapist.name)}
+              className="contact-btn"
+            >
+              Contact
+            </button>
+          </div>
         ))}
       </div>
     </div>

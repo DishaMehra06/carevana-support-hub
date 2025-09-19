@@ -1,0 +1,8 @@
+.layout {
+  min-height: 100vh;
+  background-color: var(--background);
+}
+
+.main-content {
+  /* Add any main content specific styles here */
+}

@@ -1,4 +1,4 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import "./Services.css";
 
 const Services = () => {
   const services = [
@@ -50,31 +50,27 @@ const Services = () => {
   ];
 
   return (
-    <div className="container mx-auto px-6 py-12">
-      <div className="text-center mb-12">
-        <h1 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">
+    <div className="services-page">
+      <div className="services-header">
+        <h1 className="services-title">
           Our Services
         </h1>
-        <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+        <p className="services-subtitle">
           Comprehensive support services designed to meet the unique needs of children with special needs and their families.
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="services-grid">
         {services.map((service, index) => (
-          <Card key={index} className="shadow-card hover:shadow-lg transition-all duration-300 border-0 bg-gradient-card">
-            <CardHeader>
-              <div className="text-4xl mb-4">{service.icon}</div>
-              <CardTitle className="text-xl font-semibold text-foreground">
-                {service.title}
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <CardDescription className="text-muted-foreground leading-relaxed">
-                {service.description}
-              </CardDescription>
-            </CardContent>
-          </Card>
+          <div key={index} className="service-card">
+            <div className="service-icon">{service.icon}</div>
+            <h3 className="service-title">
+              {service.title}
+            </h3>
+            <p className="service-description">
+              {service.description}
+            </p>
+          </div>
         ))}
       </div>
     </div>
