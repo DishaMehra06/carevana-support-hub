@@ -102,7 +102,7 @@ const AzureScan = () => {
 
   return (
     <div className="azure-scan">
-      <h2>Azure Emotion Detection (REST - Rechecked)</h2>
+      <h2>Azure Emotion Detection </h2>
       <p>Upload an image and let AI detect emotions.</p>
 
       {error && <div className="error-box">{error}</div>}
