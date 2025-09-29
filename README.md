@@ -1,31 +1,32 @@
-Carevana – Healthcare Web App
+# Carevana – Healthcare Web App
 
-Carevana is a React.js web application focused on accessible healthcare for individuals with special disabilities. It emphasizes inclusivity, user-friendliness, and real-world healthcare solutions.
+Carevana is a **React.js prototype web application** focused on accessible healthcare for individuals with special disabilities.  
+It emphasizes **inclusivity, user-friendliness, and real-world healthcare solutions**.  
+This project was built during a hackathon and aims to demonstrate the UI/UX and core concept for a scalable healthcare platform.
 
-Features
+---
 
-Provides services like therapy ,genetic testing ,parent matching,doctor appointments etc to people with special abilities
-Tech Stack
+## ✨ Features
+- Services like **therapy, genetic testing, parent matching, and doctor appointments** for people with special abilities.
+- Modular **React components** (Banner, Doctors, Facilities, Services, Partners, Footer, etc.) for clean and reusable code.
+- Accessibility-first approach with semantic HTML and descriptive alt text.
+- **Planned Azure Integration**: A *Scan* feature using **Azure Cognitive Services** to analyze emotions from uploaded images (prototype only, API not integrated due to time/CORS limitations).
+- Placeholder for backend integration (Firebase or Azure) for authentication and data persistence.
 
-Frontend: React.js, HTML, CSS, JavaScript
+---
 
+## 🛠️ Tech Stack
+- **Frontend:** React.js, HTML, CSS, JavaScript  
+- **Version Control:** Git & GitHub  
+- **Future Backend Options:**  
+  - Firebase (auth, Firestore, hosting)  
+  - Azure (Cosmos DB, Functions, AD B2C)  
 
-Version Control: Git & GitHub
+---
 
-Setup
+## 🚀 Setup
+```bash
 git clone https://github.com/DishaMehra06/carevana.git
 cd carevana
 npm install
 npm start
-
-
-Replace Firebase config in firebase.js with your project settings.
-
-Achievements
-
-Finalist at IIIT Delhi Hackathon
-
-
-Focused on accessibility and real-world impact
-
-Contact
