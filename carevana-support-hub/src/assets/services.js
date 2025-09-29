@@ -5,8 +5,14 @@ import treatment from "../assets/images/treatment.png"
 import pethealth from "../assets/images/pethealth.png"
 import symptoms from "../assets/images/symptoms.png"
 import checkup from "../assets/images/checkup.png"
-
+import azureScan from "../assets/images/checkup.png"
 const services = [
+      {
+    image: azureScan,
+    name: "Azure Scan",
+    body: "Detect patient moods using Azure Cognitive Services.",
+    route: "/azure-scan", // 👈 so clicking it navigates to AzureScan component
+  },
     {
         image: vaccine,
         name: "Therapy sessions",
