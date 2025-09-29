@@ -9,7 +9,7 @@ import Navbar from "./components/navbar/Navbar";
 import Partners from "./components/partners/Partners";
 import Services from "./components/services/Services";
 import Testimonials from "./components/testimonials/Testimonials";
-import AzureScan from "./components/azure1/AzureScan"; // 👈 import your Azure Scan component
+import AzureScan from "./components/AzureScan"; // 👈 import your Azure Scan component
 
 function App() {
   return (
