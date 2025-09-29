@@ -1,0 +1,199 @@
+.azure-scan {
+  text-align: center;
+  padding: 40px;
+}
+
+.azure-scan input,
+.azure-scan button {
+  margin: 10px;
+  padding: 10px 15px;
+  font-size: 1rem;
+}
+
+.azure-scan button {
+  background: #0078d4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.azure-scan button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+.results {
+  margin-top: 20px;
+  text-align: left;
+  display: inline-block;
+}
+/* azureScan.css */
+.test-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.test-btn:hover {
+  background: #218838;
+}
+
+.azure-scan {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.upload-section {
+  margin: 20px 0;
+}
+
+#file-upload {
+  display: none;
+}
+
+.upload-label {
+  display: inline-block;
+  background: #0078d4;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.upload-label:hover {
+  background: #106ebe;
+}
+
+.image-preview img {
+  max-width: 300px;
+  max-height: 300px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+}
+
+.analyze-btn {
+  background: #0078d4;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 15px 0;
+}
+
+.analyze-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.analyze-btn:hover:not(:disabled) {
+  background: #106ebe;
+}
+
+.error-message {
+  background: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+  border: 1px solid #f5c6cb;
+}
+
+.emotion-bar {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+}
+
+.emotion-name {
+  width: 120px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.bar-container {
+  flex: 1;
+  background: #f0f0f0;
+  height: 25px;
+  border-radius: 12px;
+  margin: 0 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.bar-fill {
+  background: linear-gradient(90deg, #0078d4, #00bcf2);
+  height: 100%;
+  border-radius: 12px;
+  transition: width 0.3s ease;
+}
+
+.emotion-value {
+  width: 50px;
+  text-align: right;
+  font-weight: bold;
+}
+
+.dominant-emotion {
+  background: #e7f3ff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  border-left: 4px solid #0078d4;
+}
+.diagnostic-section {
+  margin: 20px 0;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 5px;
+}
+
+.diagnostic-btn {
+  background: #ffc107;
+  color: #212529;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.diagnostic-btn:hover {
+  background: #e0a800;
+}
+
+.diagnostic-info {
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  border-left: 4px solid #007bff;
+}
+
+.diagnostic-info pre {
+  white-space: pre-wrap;
+  margin: 0;
+}
+
+.troubleshooting-tips {
+  margin-top: 20px;
+  padding: 15px;
+  background: #fff3cd;
+  border-radius: 5px;
+  border-left: 4px solid #ffc107;
+}
+
+.troubleshooting-tips ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.troubleshooting-tips li {
+  margin: 5px 0;
+}
